@@ -29,9 +29,9 @@ I recommend you install the [Inline HTML](https://marketplace.visualstudio.com/i
 
 There is seemingly a lot of functionality packed in here, but all of it is accomplished without too much indirection.
 
-The best way to understand what's going on is by reading the source code. There isn't much of it and it's fairly straight to the point. I recommend starting by looking at `Layout.jsx`, which takes in `children` components, so that we can reuse that exterior template for all the pages (`Home.jsx`, for example, places its content inside of the layout);
+The best way to understand what's going on is by reading the source code. There isn't much of it and it's fairly straight to the point. I recommend starting by looking at `Layout.jsx`, which takes in `children` components, so that we can reuse that exterior template for all the pages (`Home.jsx`, for example, places its content inside of the layout).
 
-`Layout.jsx`, defines the layout that all pages have currently. Any styles in here are global and aren't scoped. Here you can see where the bundle and script is included.
+`Layout.jsx` defines the layout that all pages have currently. Any styles in here are global and aren't scoped. Here you can see where the bundle and script is included.
 
 The example website you get when you run this project is meant to be some sort of blog. On the `/blog` route, we have a list of cards highlighing each blog post. Each one has a "See details" button, which opens up a subpage of the blog and a "See tags" button, which dynamically expands to reveal a list of tags. This entire blog is implemented in `generator/components/Blog.jsx`, which defines all the blog data, an entire page highlighting all the blog posts, defines subpages, with scoped style, and hydration in one file.
 
