@@ -1,0 +1,20 @@
+{
+  "scripts": {
+    "dev": "npm run watch & npm run serve",
+    "watch": "node scripts/build.js watch",
+    "generate": "node scripts/build.js",
+    "serve": "node scripts/serve.js --host=localhost --port=3000",
+    "clean": "node scripts/clean.js"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.2",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7"
+  },
+  "dependencies": {
+    "esbuild": "^0.18.14",
+    "gsap": "^3.12.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
